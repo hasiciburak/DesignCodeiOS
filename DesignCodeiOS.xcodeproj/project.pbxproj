@@ -12,6 +12,7 @@
 		9115097E2A82DB1A00648EA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9115097D2A82DB1A00648EA3 /* Assets.xcassets */; };
 		911509812A82DB1A00648EA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 911509802A82DB1A00648EA3 /* Preview Assets.xcassets */; };
 		91C2B4D62A8FFB46004AC0EF /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2B4D52A8FFB46004AC0EF /* Styles.swift */; };
+		91C2B4D82A9001D2004AC0EF /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C2B4D72A9001D2004AC0EF /* AccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		9115097D2A82DB1A00648EA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		911509802A82DB1A00648EA3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		91C2B4D52A8FFB46004AC0EF /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		91C2B4D72A9001D2004AC0EF /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				91C2B4D52A8FFB46004AC0EF /* Styles.swift */,
 				911509792A82DB1900648EA3 /* DesignCodeiOSApp.swift */,
 				9115097B2A82DB1900648EA3 /* ContentView.swift */,
+				91C2B4D72A9001D2004AC0EF /* AccountView.swift */,
 				9115097D2A82DB1A00648EA3 /* Assets.xcassets */,
 				9115097F2A82DB1A00648EA3 /* Preview Content */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91C2B4D82A9001D2004AC0EF /* AccountView.swift in Sources */,
 				91C2B4D62A8FFB46004AC0EF /* Styles.swift in Sources */,
 				9115097C2A82DB1900648EA3 /* ContentView.swift in Sources */,
 				9115097A2A82DB1900648EA3 /* DesignCodeiOSApp.swift in Sources */,
