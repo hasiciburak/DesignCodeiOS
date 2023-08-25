@@ -35,11 +35,8 @@ struct AccountView: View {
                 .padding()
                 .background(Circle().fill(.ultraThinMaterial))
                 .background(
-                    Image(systemName: "hexagon")
-                        .symbolVariant(.fill)
-                        .foregroundColor(.blue)
-                        .font(.system(size: 200))
-                        .offset(x: -50, y: -100)
+                    HexagonView()
+                        .offset(x:-50, y: -100)
                 )
             Text("Burak Haşıcı")
                 .font(.title.weight(.semibold))
@@ -51,7 +48,7 @@ struct AccountView: View {
             }
         }.frame(maxWidth: .infinity)
     }
-
+    
     var menu: some View {
         Section {
             NavigationLink(destination: ContentView()) {
