@@ -8,24 +8,44 @@
 import SwiftUI
 
 struct TabBar: View {
+    @State var selectedTab: Tab = .home
+    
     var body: some View {
         ZStack(alignment: .bottom) {
-            ContentView()
-                .frame(maxWidth: .infinity, maxHeight:.infinity)
+            
+            Group{
+                switch selectedTab {
+                case .home:
+                    ContentView()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                case .explore:
+                    AccountView()
+                case .notifications:
+                    AccountView()
+                case .library:
+                    AccountView()
+                }
+            }
+            
             HStack{
                 Spacer()
                 ForEach(tabItems) { item in
-                    VStack (spacing: 0){
-                        Image(systemName: item.icon)
-                            .symbolVariant(.fill)
-                            .font(.body.bold())
-                            .frame(width: 80,height: 29)
-                        Text(item.text)
-                            .font(.caption2)
-                            .lineLimit(1)
+                    Button {
+                        selectedTab = item.tab
+                    } label: {
+                        VStack (spacing: 0){
+                            Image(systemName: item.icon)
+                                .symbolVariant(.fill)
+                                .font(.body.bold())
+                                .frame(width: 80,height: 29)
+                            Text(item.text)
+                                .font(.caption2)
+                                .lineLimit(1)
+                        }
+                        .frame(maxWidth: .infinity)
                     }
+                    .foregroundStyle(selectedTab == item.tab ? .primary : .secondary)
                 }
-                .frame(maxWidth: .infinity)
             }
             .padding(.horizontal, 8)
             .padding(.top, 14)
